@@ -43,7 +43,7 @@
 			
 									<div id="nav-unauth">
 	<div style="float: left; padding: 14px 9px 9px; font-size: 15px;"><a href="/session/new" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 15px;"><b>Click here to login or create an account</b></a></div>
-	<div style="float: right; width: 155px; padding: 9px;"><a href="/session/new"><img src="/twitspare/images/sign-in-with-twitter.png"></a></div>
+	<div style="float: right; width: 155px; padding: 9px;"><a href="/twitspare/index.php/oauth/"><img src="/twitspare/images/sign-in-with-twitter.png"></a></div>
 	<div style="clear: both;"></div>
 </div>							
 			</div>
