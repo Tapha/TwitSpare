@@ -73,7 +73,7 @@ class Oauth extends Controller {
 		
 		$data['username'] = $user->screen_name;
 		
-		//The Twitter Location
+		//The Twitter Location:
 		
 		$data['location'] = $user->location;
 		
@@ -123,11 +123,15 @@ class Oauth extends Controller {
 					
 					//Load-View
 					
-					//Store user in session
+					//Store user id in the session
 					
+					$this->session->set_userdata($user_id);
 					
+					$user_session = $this->session->userdata($user_id);
 					
-					$this->load->view('user_account');
+					$data['user_session'] = $user_session;
+					
+					$this->load->view('user_account',$data);
 				
 				}
 		
@@ -135,13 +139,50 @@ class Oauth extends Controller {
 		
 				{
 				
+				
+					$username = &$data['username'];
+					
 					//Create a user account & then redirect to view
 					
 					//Insert the twitter user id into the database
 					
-					$query = $this->query("INSERT INTO user VALUES ('','$user_id','','','')");
+					$query = $this->query("INSERT INTO user VALUES ('','$user_id','$username','','')");
 					
 					//Create custom vanity url..
+					
+					//Create Vanity Url
+						
+					$query_2 = $this->query("SELECT * FROM forwardslash");	
+					
+					$row = $query_2->row();
+					
+					$part1 = $row->part_1;
+					
+					$part2 = $row->part_2;
+
+					if (!file_exists("$username"))
+
+					{	
+											 
+					mkdir("$username");
+
+					$file = "$username/index.php";
+
+					$fh = fopen($file,'w');
+
+					fwrite($fh, $part1.$username.$part2);
+
+					fclose($fh);
+
+					}
+					
+					else
+					
+					{
+						
+						echo "file already exists, sorry.";
+					
+					}
 					
 					//Load user_account view
 					
