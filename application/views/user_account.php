@@ -1,4 +1,5 @@
 <!doctype html>
+<?php if (isset($users_id) && ($name)) { ?>
 
 <html>
 
@@ -67,10 +68,10 @@
 				
 				<div id="profile-header">
 					<div id="profile-avatar">
-						<img src="http://a3.twimg.com/profile_images/692727307/header_bigger.png" class="avatar">
+						<img src="<?=$image?>" class="avatar">
 					</div>
 					<div id="profile-username">
-						<a target="_blan" href="http://twitter.com/TaphaNgum" style="font-size: 30px;" class="nav-link">TaphaNgum</a>
+						<a target="_blan" href="http://twitter.com/<?=$username?>" style="font-size: 30px;" class="nav-link"><?=$username?></a>
 					</div>
 					<div style="clear: both;"></div>
 				</div>
@@ -133,13 +134,13 @@
 				</br>
 				</br>
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Name</b> Name Here</div>	
+									<div style="margin-top: 7px; font-size: 14px;"><b>Name</b><?=$name?></div>	
 
-									<div style="margin-top: 7px; font-size: 14px;"><b>Location</b> Location Here</div>
+									<div style="margin-top: 7px; font-size: 14px;"><b>Location</b><?=$location?></div>
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Web</b> Website here</div>				
+									<div style="margin-top: 7px; font-size: 14px;"><b>Web</b><?=$url?></div>				
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Bio</b> Bio Here</div>				
+									<div style="margin-top: 7px; font-size: 14px;"><b>Bio</b><?=$desc?></div>				
 				
 				<div style="margin-bottom: 10px; margin-top: 15px;"><b>Stats</b></div>
 
@@ -148,7 +149,9 @@
 
 				<div>
 				
-				<b>Display stats here</b>
+				<b>		
+				
+				</b>
 				
 				</div>
 				<div style="clear: both; height: 10px;"></div>
@@ -167,3 +170,5 @@
 	
 	</div>
 </html>
+
+<?php } else { echo "Your not logged in.";} ?>

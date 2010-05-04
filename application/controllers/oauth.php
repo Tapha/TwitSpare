@@ -121,7 +121,7 @@ class Oauth extends Controller {
 				
 					//Load view("user_account") and store user in session
 					
-					//Load-View
+					//Load->View
 					
 					//Store user id in the session
 					
@@ -140,7 +140,7 @@ class Oauth extends Controller {
 				{
 				
 				
-					$username = &$data['username'];
+					$username = $data['username'];
 					
 					//Create a user account & then redirect to view
 					
