@@ -9,7 +9,12 @@ class Welcome extends Controller {
 	
 	function index()
 	{
-		$this->load->view('welcome_message');
+		
+		$uri = $_SERVER['REQUEST_URI'];
+		
+		$data["uri"] = $uri;
+		
+		$this->load->view('welcome_message',$data);
 	}
 }
 

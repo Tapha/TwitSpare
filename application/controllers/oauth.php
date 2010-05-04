@@ -54,9 +54,101 @@ class Oauth extends Controller {
 		}
 
 		// This is where  you can call a method.
+		
+		//Get user details
+		
+		//Get the credentials from twitter
+		
+		$user_credentials = $this->twitter->call('account/verify_credentials');
 
-		$this->twitter->call('statuses/update', array('status' => 'Testing CI Twitter oAuth sexyness by @elliothaughin'));
+		//Load the SimpleXML Class and get the xml data from the twitter user
+		
+		$user = new SimpleXMLElement($user_credentials);
+		
+		//The Twitter User Name 
+		
+		$data['name'] = $user->name;
+		
+		//The Twitter Username
+		
+		$data['username'] = $user->screen_name;
+		
+		//The Twitter Location
+		
+		$data['location'] = $user->location;
+		
+		//The Twitter Description
+		
+		$data['description'] = $user->description;
+		
+		//The Twitter Image
+		
+		$data['image'] = $user->profile_image_url;
+		
+		//The Twitter Follower Count
+		
+		$data['followers'] = $user->followers_count;
+		
+		//The Twitter Updated status count
+		
+		$data['status_count'] = $user->statuses_count;
+		
+		//The Twitter Url
+		
+		$data['user_url'] = $user->url;
+		
+		//The Twitter Users ID to match against DB
+		
+		$data['users_id'] = $user->id;
+		
+		//Load database library
+		
+		//Check if user id already exists.  If so Load the users homepage and store id in a session the redirect to user account view. If not create a new user id in the database and copy. Then redirect to user view//
+		
+		$query = $this->db->query("SELECT * FROM user WHERE twitter_user_id = {$data['users_id']} LIMIT 1");
+		
+		$row = $query->row();
+		
+		$db_user_id = $row->twitter_user_id;
+		
+		//Check against verified user id
+		
+		$user_id = $data['users_id'];
+		
+		if ($user_id == $db_user_id)
 
+				{
+				
+					//Load view("user_account") and store user in session
+					
+					//Load-View
+					
+					//Store user in session
+					
+					
+					
+					$this->load->view('user_account');
+				
+				}
+		
+		else
+		
+				{
+				
+					//Create a user account & then redirect to view
+					
+					//Insert the twitter user id into the database
+					
+					$query = $this->query("INSERT INTO user VALUES ('','$user_id','','','')");
+					
+					//Create custom vanity url..
+					
+					//Load user_account view
+					
+					$this->load->view('user_account');
+					
+				}
+		
 		// Here's the calls you can make now.
 		// Sexy!
 		
