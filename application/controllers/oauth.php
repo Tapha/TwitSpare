@@ -146,7 +146,7 @@ class Oauth extends Controller {
 					
 					//Insert the twitter user id into the database
 					
-					$query = $this->query("INSERT INTO user VALUES ('','$user_id','$username','','')");
+					$query = $this->query("INSERT INTO user VALUES ('','$user_id','$username','','','')");
 
 					//Load user_account view
 					
