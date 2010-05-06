@@ -1,5 +1,6 @@
-<!doctype html>
 <?php if (isset($users_id) && ($name)) { ?>
+
+<!doctype html>
 
 <html>
 
@@ -45,7 +46,7 @@
 			
 									<div id="nav-auth">
 	<div id="nav-user">
-		<a href="Put user url" class="nav-link">Home</a> &nbsp; <a href="/manage/" class="nav-link">Manage Account</a> &nbsp; <a href="/manage_ads_user" class="nav-link">Manage Ads</a> &nbsp;<a href="/logout/" class="nav-link">Logout</a>
+		<a href="<?php echo $base.$username?>" class="nav-link">Home</a> &nbsp; <a href="<?php echo $base?>manage/" class="nav-link">Manage Account</a> &nbsp; <a href="<?php echo $base?>manage_ads_user" class="nav-link">Manage Ads</a> &nbsp;<a href="<?php echo $base?>logout" class="nav-link">Logout</a>
 	</div>
 </div>								
 			</div>
@@ -68,10 +69,10 @@
 				
 				<div id="profile-header">
 					<div id="profile-avatar">
-						<img src="<?=$image?>" class="avatar">
+						<img src="<?php echo $image?>" class="avatar">
 					</div>
 					<div id="profile-username">
-						<a target="_blan" href="http://twitter.com/<?=$username?>" style="font-size: 30px;" class="nav-link"><?=$username?></a>
+						<a target="_blan" href="http://twitter.com/<?php echo $username?>" style="font-size: 30px;" class="nav-link"><?php echo $username?></a>
 					</div>
 					<div style="clear: both;"></div>
 				</div>
@@ -105,7 +106,7 @@
 				<b>Adverts Completed (Display ad number here)</b>
 				</div>
 				
-<div style="background-color: rgb(204, 204, 204); height: 1px; margin-top: 20px; margin-bottom: 20px;" id="image--sep"></div>				
+<div style="background-color: rgb(204, 204, 204); height: 1px; margin-top: 7px; margin-bottom: 20px;" id="image--sep"></div>				
 				<div style="padding-bottom: 15px;" id="profile-pagination">					
 															
 						&nbsp;&nbsp;
@@ -113,7 +114,12 @@
 						
 			<div id = "ads_completed_mini">
 
-			<b>ads completed here.</b>
+			<b>ads completed here.
+			
+			
+			
+			
+</b>
 
 			</div>					
 				
@@ -124,7 +130,7 @@
 				
 				<div id="profile-about">
 				<div style="margin-bottom: 9px; clear: both;">
-					<div style="float: left; width: 150px;"><b>About</b></div>
+					<div style="float: left; width: 150px;"><b>About<br></b></div>
 				</div>
 
 				<div style="height: 1px; background-color: rgb(204, 204, 204); margin-bottom: 0px;"></div>
@@ -134,13 +140,13 @@
 				</br>
 				</br>
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Name</b><?=$name?></div>	
+									<div style="margin-top: 7px; font-size: 14px;"><b>Name</b><?php echo " " .$name?></div>	
 
-									<div style="margin-top: 7px; font-size: 14px;"><b>Location</b><?=$location?></div>
+									<div style="margin-top: 7px; font-size: 14px;"><b>Location</b><?php echo " " .$location?></div>
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Web</b><?=$url?></div>				
+									<div style="margin-top: 7px; font-size: 14px;"><b>Web</b><?php echo " <a href='".$user_url."'>".$user_url."</a>" ?></div>				
 				
-									<div style="margin-top: 7px; font-size: 14px;"><b>Bio</b><?=$desc?></div>				
+									<div style="margin-top: 7px; font-size: 14px;"><b>Bio</b><?php echo " "  .$desc ?></div>				
 				
 				<div style="margin-bottom: 10px; margin-top: 15px;"><b>Stats</b></div>
 
@@ -152,15 +158,11 @@
 				<b>		
 				
 				</b>
-				
+					<div id="profile-ad">
 				</div>
 				<div style="clear: both; height: 10px;"></div>
 				</div>
 
-				<div id="profile-ad">
-					<iframe width="165" height="700" frameborder="0" scrolling="no" src="Put ad url here">
-						</iframe>
-			    </div>
 				
 			</td>
 		</tr>
@@ -169,6 +171,17 @@
 	<div style="clear: both;"></div>
 	
 	</div>
+
+<div id="footer">
+			<div id="footer-tag">
+			&copy;2010 Dummy Limited, All Rights Reserved
+			</div>
+			<div id="footer-links">
+				<a class="footer-link" href="/">Home</a> &nbsp; <a class="footer-link" href="/faq.do">Faq</a> &nbsp; <a class="footer-link" href="/contact.do">Contact</a>  &nbsp; <a class="footer-link" href="/api.do">API</a> &nbsp; <a class="footer-link" href="/terms.do">Terms</a>
+			</div>
+			<div style="clear: both; height: 25px;">&nbsp;</div>
+		</div>
+	
 </html>
 
 <?php } else { echo "Your not logged in.";} ?>

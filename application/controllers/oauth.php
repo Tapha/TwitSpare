@@ -60,46 +60,44 @@ class Oauth extends Controller {
 		//Get the credentials from twitter
 		
 		$user_credentials = $this->twitter->call('account/verify_credentials');
-
-		//Load the SimpleXML Class and get the xml data from the twitter user
 		
-		$user = new SimpleXMLElement($user_credentials);
+		//Get Twitter Values
 		
 		//The Twitter User Name 
 		
-		$data['name'] = $user->name;
+		$data['name'] = $user_credentials->name;
 		
 		//The Twitter Username
 		
-		$data['username'] = $user->screen_name;
+		$data['username'] = $user_credentials->screen_name;
 		
 		//The Twitter Location:
 		
-		$data['location'] = $user->location;
+		$data['location'] = $user_credentials->location;
 		
 		//The Twitter Description
 		
-		$data['description'] = $user->description;
+		$data['desc'] = $user_credentials->description;
 		
 		//The Twitter Image
 		
-		$data['image'] = $user->profile_image_url;
+		$data['image'] = $user_credentials->profile_image_url;
 		
 		//The Twitter Follower Count
 		
-		$data['followers'] = $user->followers_count;
+		$data['followers'] = $user_credentials->followers_count;
 		
 		//The Twitter Updated status count
 		
-		$data['status_count'] = $user->statuses_count;
+		$data['status_count'] = $user_credentials->statuses_count;
 		
 		//The Twitter Url
 		
-		$data['user_url'] = $user->url;
+		$data['user_url'] = $user_credentials->url;
 		
 		//The Twitter Users ID to match against DB
 		
-		$data['users_id'] = $user->id;
+		$data['users_id'] = $user_credentials->id;
 		
 		//Load database library
 		
@@ -119,38 +117,37 @@ class Oauth extends Controller {
 
 				{
 				
-					//Load view("user_account") and store user in session
+					//Load view("user_account")
+					
+
+					
+					//Load Base_URL
+					
+					$this->load->helper('url');
+					
+					$data['base'] = base_url()."index.php/";
 					
 					//Load->View
 					
-					//Store user id in the session
-					
-					$this->session->set_userdata($user_id);
-					
-					$user_session = $this->session->userdata($user_id);
-					
-					$data['user_session'] = $user_session;
-					
-					$this->load->view('user_account',$data);
+					$this->load->view('user_account', $data);
 				
 				}
 		
 		else
 		
 				{
-				
-				
+			
 					$username = $data['username'];
 					
 					//Create a user account & then redirect to view
 					
 					//Insert the twitter user id into the database
 					
-					$query = $this->query("INSERT INTO user VALUES ('','$user_id','$username','','','')");
+					$query = $this->db->query("INSERT INTO user VALUES ('','$user_id','$username','','')");
 
 					//Load user_account view
 					
-					$this->load->view('user_account',$data);
+					$this->load->view('user_account', $data);
 					
 				}
 		
