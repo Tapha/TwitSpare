@@ -34,7 +34,7 @@
 	
 	
 </head>		
-<body>
+<body id="container">
 <div id="header_container">
 <div id="header">
 
@@ -55,9 +55,11 @@
 	</div>	
 	</div>
 	
-	<div id="body">
+	<div id= "body_container">
+	
+	<div id="body_content">
 			
-				<h2></h2>
+				<h2>breberbeebeb</h2>
 			
 			</div>
 
@@ -66,5 +68,6 @@
 		
 	</div>
 	
+	</div>
 </body>	
 </html>

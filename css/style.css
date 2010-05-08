@@ -27,6 +27,8 @@ width: 560px;
 float: right;
 margin-top: 20px;
 width: 550px;
+position: relative;
+top: -100px;
 }
 
 #login_area
@@ -53,16 +55,24 @@ font-family: Helvetica,Arial,sans-serif;
 min-height: 700px;
 }
 
-#body
+#body_content
 
 {
-float:left;
-min-height:500px;
-padding:15px 18px 10px 12px;
-position:relative;
-width:672px;
+float: left;
+-moz-border-radius:7px 7px 7px 7px;
+background:#B2DFEE;
+width:1091px;
+position: relative;
+left: 6.1%;
+
 }
 
+#body_container
+
+{
+width 1110px;
+
+}
 #logo {
 float:left;
 margin-top:10px;
