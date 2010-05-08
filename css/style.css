@@ -41,6 +41,15 @@ width: 485px;
 text-align: right;
 }
 
+#arrow
+
+{
+background-image: url("/twitspare/images/arrow.png");
+background-repeat: no-repeat;
+height:68px;
+margin-left:90px;
+}
+
 #twitter
 
 {
