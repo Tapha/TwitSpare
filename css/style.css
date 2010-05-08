@@ -47,7 +47,7 @@ text-align: right;
 background-image: url("/twitspare/images/arrow.png");
 background-repeat: no-repeat;
 height:68px;
-margin-left:90px;
+margin-left:134px;
 }
 
 #twitter
@@ -73,6 +73,7 @@ background:#B2DFEE;
 width:1091px;
 position: relative;
 left: 6.1%;
+top: -19px;
 
 }
 

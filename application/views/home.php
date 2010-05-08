@@ -61,7 +61,7 @@
 	
 	<div id="body_content">
 			
-				<h2><p>breberbeebeb</p></h2>
+				<h2><p>b</p></h2>
 			
 			</div>
 
