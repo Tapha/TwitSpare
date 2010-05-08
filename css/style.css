@@ -2,7 +2,7 @@ img
 	
 {
 
-	border:none;
+border:none;
 	
 }
 
@@ -44,9 +44,9 @@ text-align: right;
 #arrow
 
 {
-background-image: url("/twitspare/images/arrow.png");
+background-image: url("/twitspare/images/arrow2.png");
 background-repeat: no-repeat;
-height:68px;
+height:28px;
 margin-left:134px;
 }
 
@@ -73,7 +73,7 @@ background:#B2DFEE;
 width:1091px;
 position: relative;
 left: 6.1%;
-top: -19px;
+top: -38px;
 
 }
 
@@ -87,4 +87,12 @@ width 1110px;
 float:left;
 margin-top:10px;
 width:421px;
+}
+
+#footer
+
+{
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
 }
