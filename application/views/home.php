@@ -61,7 +61,12 @@
 	
 	<div id="body_content">
 			
-				<h2><p>bl</p></h2>
+				<h2><p>bl99designs  - The largest crowdsourced design company. When I used them, I wrote a description of the design I needed and how much I paid. I got a bunch of designs back. I gave each designer feedback. I got more designs. I picked the one I liked. All within 3 days.
+
+DNAMail - Try this. There's a number on their web site. Call it. See how fast they pick up. If email is important to your company and you want that kind of support, sign up. They're the experts, but their prices are shockingly inexpensive.
+
+Grasshopper - Entrepreneurs (like me) love and use Grasshopper because it offers all the features of the big, expensive phone systems (like multiple extensions, music on hold and call forwarding) but it works with any phone and starts at only $9.95 a mo
+</p></h2>
 			
 			</div>
 

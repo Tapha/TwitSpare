@@ -28,7 +28,7 @@ float: right;
 margin-top: 20px;
 width: 550px;
 position: relative;
-top: -100px;
+top: -98px;
 }
 
 #login_area
@@ -44,7 +44,7 @@ text-align: right;
 #arrow
 
 {
-background-image: url("/twitspare/images/arrow2.png");
+background-image: url("/twitspare/images/arrow.png");
 background-repeat: no-repeat;
 height:28px;
 margin-left:134px;
@@ -58,18 +58,22 @@ padding 9px;
 width: 155px;
 }
 
+
+
 body
 {
 font-family: Helvetica,Arial,sans-serif;
 min-height: 700px;
+background: #FFFFFF ;
 }
 
 #body_content
 
 {
+color: #0B070C;
 float: left;
 -moz-border-radius:7px 7px 7px 7px;
-background:#B2DFEE;
+background:#8FC8E8;
 width:1091px;
 position: relative;
 left: 6.1%;
