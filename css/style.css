@@ -16,7 +16,7 @@ width: 1160px
 
 {
 
-height:113px;
+height:100px;
 margin: 10 auto;
 position: relation;
 width: 560px;
@@ -27,7 +27,7 @@ width: 560px;
 
 {
 float: right;
-margin-top: 20px;
+margin-top: 23px;
 width: 550px;
 position: relative;
 top: -98px;
@@ -49,7 +49,7 @@ text-align: right;
 {
 background-image: url("/twitspare/images/arrow.png");
 background-repeat: no-repeat;
-height:28px;
+height: 32px;
 margin-left:134px;
 }
 
@@ -81,8 +81,47 @@ background:#8FC8E8;
 width:1091px;
 position: relative;
 left: 6.1%;
-top: -38px;
+top: -52px;
 
+}
+
+#nav
+
+{
+float: right;
+top: -70px;
+position: relative; 
+font-size: 12px;
+color: #024769;
+font-family: Helvetica,sans-serif;
+}
+
+#mini_intro
+
+{
+font-size: 12px;
+color: #024769;
+font-family: Helvetica,sans-serif;
+text-align: center;
+}
+
+#intro
+
+{
+font-size: 18px;
+color: #024769;
+font-family: Helvetica,sans-serif;
+text-align: center;
+}
+
+#earnings
+
+{
+
+font-family: Helvetica,sans-serif;
+font-size: 18px;
+float: right;
+left: -10px;
 }
 
 #body_container
@@ -104,3 +143,8 @@ margin-left: 10px;
 margin-right: 10px;
 margin-top: 10px;
 }
+
+a:link {color: #222222; text-decoration: underline; }
+a:active {color: #222222; text-decoration: underline; }
+a:visited {color: #222222; text-decoration: underline; }
+a:hover {color: #222222; text-decoration: none; }

@@ -49,9 +49,11 @@
 	<b>Click here to create an account or sign-in</b></a></div>
 	<div style="float: right; width: 155px; padding: 9px;"><a id="twitter" href="/"><img src="/twitspare/images/Sign-in-with-Twitter.png"></a></div>
 	<div style="clear: both;"></div>
+	 
 </div>
+<div id= "nav"><a href="/">About   </a> <a href="/">   How It Works</a> <a href="/">    Founder</a> <a href="/">   FAQ</a> <a href="/">    Contact Us</a></div>
 </div>
-	
+<div id="earnings"></div>	
 	</div>	
 	</div>
 	<div id = "arrow"></div>
@@ -61,13 +63,8 @@
 	
 	<div id="body_content">
 			
-				<h2><p>bl99designs  - The largest crowdsourced design company. When I used them, I wrote a description of the design I needed and how much I paid. I got a bunch of designs back. I gave each designer feedback. I got more designs. I picked the one I liked. All within 3 days.
-
-DNAMail - Try this. There's a number on their web site. Call it. See how fast they pick up. If email is important to your company and you want that kind of support, sign up. They're the experts, but their prices are shockingly inexpensive.
-
-Grasshopper - Entrepreneurs (like me) love and use Grasshopper because it offers all the features of the big, expensive phone systems (like multiple extensions, music on hold and call forwarding) but it works with any phone and starts at only $9.95 a mo
-</p></h2>
-			
+				<h2 id="intro">We help you do worth of mouth advertising on twitter by connecting you with the conversation</h2>
+				<h3 id="mini_intro">If your a regular twitter user, you earn money per click and you get to make the messages you tweet. (We trust you <img src="http://www.mazeguy.net/happy/veryhappy.gif">)                    (<a href="/">Learn more</a>)</h3>  
 			</div>
 
 		
