@@ -15,11 +15,13 @@ width: 1160px
 #header
 
 {
+
 height:113px;
 margin: 10 auto;
 position: relation;
 width: 560px;
 }
+
 
 #nav_login_area
 
@@ -37,6 +39,7 @@ top: -98px;
 float: right;
 background: #B2DFEE;
 -moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
 width: 485px;
 text-align: right;
 }
@@ -73,6 +76,7 @@ background: #FFFFFF ;
 color: #0B070C;
 float: left;
 -moz-border-radius:7px 7px 7px 7px;
+-webkit-border-radius:7px 7px 7px 7px;
 background:#8FC8E8;
 width:1091px;
 position: relative;
