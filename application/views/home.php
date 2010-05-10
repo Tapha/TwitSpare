@@ -19,7 +19,8 @@
 <script type="text/javascript" src="/twitspare/jquery/script.js">
 </script>
 
-
+<script type="text/javascript">
+</script>
 
 
 	<meta name="Title" content="TwitSpare" />
@@ -71,7 +72,26 @@
 
 				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
-				<h3 id="recent_tweets"> <?php   ?>		
+				<h3 id="recent_tweets"> <?php $this->load->library('misc');
+				
+											 foreach($results->results as $result){
+								
+											
+											 echo '<div id="twitter_status">';
+											 echo '<img src="'.$result->profile_image_url.'" id="twitter_image">';
+											 $text_n = Misc::toLink($result->text, $result->id, $result->from_user); 
+											 echo $text_n;
+											 echo '<div class="twitter_small">';
+											 echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
+											 echo '<strong>at:</strong> '.$result->created_at;
+											 echo '</div>';
+											 echo '</div>';	
+											 
+											
+										
+										}
+										?>	
+	</h3>	
 	</div>	
 	</div>
 	<div id="footer">
