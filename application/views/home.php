@@ -45,9 +45,9 @@
 	<div id="nav_login_area">
 	<div id="login_area">
 	<div style="float: left; padding: 14px 9px 9px; font-size: 15px;">
-	<a href="/" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 15px;">
+	<a href="/twitspare/index.php/oauth" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 15px;">
 	<b>Click here to create an account or sign-in</b></a></div>
-	<div style="float: right; width: 155px; padding: 9px;"><a id="twitter" href="/"><img src="/twitspare/images/Sign-in-with-Twitter.png"></a></div>
+	<div style="float: right; width: 155px; padding: 9px;"><a id="twitter" href="/twitspare/index.php/oauth/"><img src="/twitspare/images/Sign-in-with-Twitter.png"></a></div>
 	<div style="clear: both;"></div>
 	 
 </div>
@@ -67,11 +67,14 @@
 				<h3 id="mini_intro">If your a regular twitter user, you earn money per click and you get to make the messages you tweet. (We trust you <img src="http://www.mazeguy.net/happy/veryhappy.gif">)                    (<a href="/">Learn more</a>)</h3>  
 			</div>
 
-		
-		<div id="footer">
-		
+	<div id="main_body">
+
+				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
+				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
+				
+	</div>	
 	</div>
-	
+	<div id="footer">
 	</div>
 </body>	
 </html>
