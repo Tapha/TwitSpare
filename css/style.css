@@ -92,9 +92,10 @@ color: #333333
 
 {
 font-size: 18px;
-color: #0B070C;
+color: #FFFFFF;
 -moz-border-radius: 10px 10px 10px 10px;
-background: #B2DFEE;
+-webkit-border-radius: 10px 10px 10px 10px;
+background: #024769;
 height: 25px;
 width: 850px;
 position: relative;
@@ -115,7 +116,7 @@ background: #FFFFFF ;
 {
 color: #0B070C;
 float: left;
--moz-border-radius: 7px 7px 7px 7px;
+-moz-border-radius:7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
 background:#8FC8E8;
 width:1091px;
