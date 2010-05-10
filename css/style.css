@@ -92,7 +92,13 @@ color: #333333
 
 {
 font-size: 18px;
-color: #024769;
+color: #0B070C;
+-moz-border-radius: 10px 10px 10px 10px;
+background: #B2DFEE;
+height: 25px;
+width: 850px;
+position: relative;
+left: 107px;
 font-family: Helvetica,sans-serif;
 text-align: center;
 }
@@ -109,7 +115,7 @@ background: #FFFFFF ;
 {
 color: #0B070C;
 float: left;
--moz-border-radius:7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
 background:#8FC8E8;
 width:1091px;

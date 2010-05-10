@@ -28,13 +28,13 @@ class Home extends Controller {
 		
 		$bit_ly_links = implode($bitly_query);
 	
-		$results = $this->twitter->search('search', array('q' => "$bit_ly_links"));
+		$results = $this->twitter->search('search', array('q' => "$bit_ly_links", 'rpp' => "5"));
 		
 		//Get data needed
 		
 		$data['results'] = $results;
 		
-		//print_r($results);
+		//print_r($results->results);
 		
 		$this->load->view("home",$data);
 		

@@ -64,19 +64,27 @@
 	
 	<div id="body_content">
 			
-				<h2 id="intro">We help you do worth of mouth advertising on twitter by connecting you with the conversation</h2>
-				<h3 id="mini_intro">If your a regular twitter user, you earn money per click and you get to make the messages you tweet. (We trust you <img src="http://www.mazeguy.net/happy/veryhappy.gif">)                    (<a href="/">Learn more</a>)</h3>  
+				<h2 id="intro">We help you do word of mouth advertising on twitter by connecting you to the conversation</h2>
+				<h3 id="mini_intro">If your a regular twitter user, you can earn money per click and you get to make the messages you tweet. (We trust you<!--<img src="http://www.mazeguy.net/happy/veryhappy.gif">-->   )                       (<a href="/">How much can my account earn?</a>)</h3>  
 			</div>
 
 	<div id="main_body">
 
 				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
-				<h3 id="recent_tweets"> <?php $this->load->library('misc');
-				
-											 foreach($results->results as $result){
+				<h3 id="recent_tweets"> <?php
+										$this->load->library('misc');
+										
+										$number = 0;
+										
+										foreach($results->results as $number => $result){
 								
+								         //print_r($number);
+								
+										//
+									
 											
+										
 											 echo '<div id="twitter_status">';
 											 echo '<img src="'.$result->profile_image_url.'" id="twitter_image">';
 											 $text_n = Misc::toLink($result->text, $result->id, $result->from_user); 
@@ -87,9 +95,11 @@
 											 echo '</div>';
 											 echo '</div>';	
 											 
-											
+										
+										
 										
 										}
+										//}
 										?>	
 	</h3>	
 	</div>	
