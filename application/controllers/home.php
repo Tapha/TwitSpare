@@ -9,6 +9,35 @@ class Home extends Controller {
 	
 	public function index()
 	{
-		$this->load->view("home");
+		
+		//Load Twitter Library for use
+		
+		$this->load->library('twitter');
+		
+		//Query for last 20 submitted links
+		
+		$query = $this->db->query("SELECT * FROM sent_ads ORDER BY sent_ads_id DESC LIMIT 0, 20");
+		
+		foreach($query->result() as $link)
+		
+		{
+		
+			$bitly_query[] = $link->link;	
+		
+		}
+		
+		$bit_ly_links = implode($bitly_query);
+	
+		$results = $this->twitter->search('search', array('q' => "$bit_ly_links"));
+		
+		//Get data needed
+		
+		$data['results'] = $results;
+		
+		//print_r($results);
+		
+		$this->load->view("home",$data);
+		
+		
 	}
 }

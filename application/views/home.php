@@ -71,7 +71,7 @@
 
 				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
-				
+				<h3 id="recent_tweets"> <?php   ?>		
 	</div>	
 	</div>
 	<div id="footer">
