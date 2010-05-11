@@ -76,29 +76,22 @@
 										$this->load->library('misc');
 										
 										$number = 0;
-										
-										foreach($results->results as $number => $result){
-								
-								         //print_r($number);
-								
-										//
-									
-											
-										
-											 echo '<div id="twitter_status">';
-											 echo '<img src="'.$result->profile_image_url.'" id="twitter_image">';
-											 $text_n = Misc::toLink($result->text, $result->id, $result->from_user); 
-											 echo $text_n;
-											 echo '<div class="twitter_small">';
-											 echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
-											 echo '<strong>at:</strong> '.$result->created_at;
-											 echo '</div>';
-											 echo '</div>';	
 											 
-										
-										
+										foreach($results->results as $result){
+										echo '<div class="twitter_status">';
+										echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
+										$text_n = $result->text; 
+										echo $text_n;
+										echo '<div class="twitter_small">';
+										echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
+										echo '<strong>at:</strong> '.$result->created_at;
+										echo '</div>';
+										echo '</div>';
 										
 										}
+										
+										
+										
 										//}
 										?>	
 	</h3>	

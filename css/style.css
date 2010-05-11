@@ -191,13 +191,13 @@ font-size: 12px;
 border-right: 5px solid #CCCCCC;
 }
 
-#twitter_status a:visited
+.twitter_status a:visited
 
 {
 color: #222222;
 }
 
-#twitter_status a:hover
+.twitter_status a:hover
 
 {
 color: #B2DFEE;
@@ -208,6 +208,12 @@ color: #B2DFEE;
 {
 top: 14px;
 position: relative;
+}
+
+.twitter_image
+
+{
+border: 2px solid #B2DFEE;
 }
 #twitter_status
 

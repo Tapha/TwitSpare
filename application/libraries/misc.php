@@ -2,7 +2,7 @@
 
 <?php
 
-Class Misc
+Class Misc extends Controller
 
 {
 
