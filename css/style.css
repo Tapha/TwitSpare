@@ -47,7 +47,7 @@ text-align: right;
 #arrow
 
 {
-background-image: url("/twitspare/images/arrow.png");
+background-image: url("/twitspare/images/arrow2.png");
 background-repeat: no-repeat;
 height: 32px;
 margin-left:134px;
@@ -78,7 +78,7 @@ font-family: Helvetica,sans-serif;
 {
 font-size: 12px;
 color: #024769;
-font-family: Helvetica,sans-serif;
+font-family: delicious-light;
 text-align: center;
 }
 
@@ -95,7 +95,7 @@ font-size: 18px;
 color: #FFFFFF;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
-background: #024769;
+background: #8FC8E8;
 height: 24px;
 width: 850px;
 position: relative;
@@ -118,7 +118,7 @@ color: #0B070C;
 float: left;
 -moz-border-radius:7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
-background:#8FC8E8;
+background:#B2DFEE;
 width:1091px;
 position: relative;
 left: 6.1%;
@@ -149,7 +149,7 @@ float: left;
 left: 5%;
 text-align: center;
 top: -175px;
-border-bottom: 5px solid #CCCCCC;
+border-bottom: 5px solid #B2DFEE;
 -moz-border-radius:10px 10px 10px 10px;
 color: #333333;
 text-decoration: none;
@@ -159,7 +159,7 @@ text-decoration: none;
 
 {
 color: #222222;
-border-bottom: 5px solid #B2DFEE;
+border-bottom: 5px solid #111111;
 text-decoration: none;
 }
 
