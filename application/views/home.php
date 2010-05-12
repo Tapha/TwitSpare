@@ -1,3 +1,44 @@
+<?php class DateIntervalFormat
+{
+    /**
+     * Format an interval value with the requested granularity.
+     *
+     * @param integer $timestamp The length of the interval in seconds.
+     * @param integer $granularity How many different units to display in the string.
+     * @return string A string representation of the interval.
+     */
+    public function getInterval($timestamp, $granularity = 2)
+    {
+        $seconds = time() - $timestamp;
+        $units = array(
+            '1 year|:count years' => 31536000,
+            '1 week|:count weeks' => 604800,
+            '1 day|:count days' => 86400,
+            '1 hour|:count hours' => 3600,
+            '1 min|:count min' => 60,
+            '1 sec|:count sec' => 1);
+        $output = '';
+        foreach ($units as $key => $value) {
+            $key = explode('|', $key);
+            if ($seconds >= $value) {
+                $count = floor($seconds / $value);
+                $output .= ($output ? ' ' : '');
+                if ($count == 1) {
+                    $output .= $key[0];
+                } else {
+                    $output .= str_replace(':count', $count, $key[1]);
+                }
+                $seconds %= $value;
+                $granularity--;
+            }
+            if ($granularity == 0) {
+                break;
+            }
+        }
+
+        return $output ? $output : '0 sec';
+    }
+}?>
 <!doctype html>
 
 <html>
@@ -75,27 +116,31 @@
 				<h3 id="recent_tweets"> <?php
 										
 										foreach($results->results as $result){
-										echo '<div class="twitter_status">';
+										echo '<div id="twitter_status">';
 										echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 										$text_n = $result->text; 
 										echo "<div id='text_twit'>".$text_n."</div>";
-										echo '<div class="twitter_small">';
-										echo '<a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
+										echo '<div id="twitter_small">';
+										echo '<a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>';
 										$date = $result->created_at;
 										
-										list($D, $d, $M, $y, $h, $m, $s, $z) = sscanf($date, "%3s, %2d %3s %4d %2d:%2d:%2d %5s");
+										$dateFormat = new DateIntervalFormat();
 										
-										$date = time() - strtotime("$d $M $y $h:$m:$s $z"); 
-										echo $date;
+										$time = strtotime($result->created_at);
+										
 										echo "<div class='time'>";
-										echo '</div>';
+										
+										print sprintf('Submitted %s ago',  $dateFormat->getInterval($time));
+										
 										echo '</div>';
 										
+										echo "</div>";
+										echo "</div>";
 										}
 										
+										echo '</div>';
 										
 										
-										//}
 										?>	
 	</h3>	
 	</div>	

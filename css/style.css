@@ -148,9 +148,8 @@ postion:relative;
 float: left;
 left: 5%;
 text-align: center;
-top: -175px;
+top: -125px;
 border-bottom: 5px solid #B2DFEE;
--moz-border-radius:10px 10px 10px 10px;
 color: #333333;
 text-decoration: none;
 }
@@ -186,58 +185,69 @@ left: -10px;
 #recent_tweets
 
 {
-width: 311px;
-font-size: 12px;
-border-right: 1px solid #CCCCCC;
-}
-
-.twitter_status a:visited
-
-{
-color: #B2DFEE;
-}
-
-.twitter_status a:hover
-
-{
-color: #222222;
-
-}
-
-.twitter_small
-
-{
-top: 2px;
+top: 20px;
 position: relative;
-border-bottom: 1px solid #CCCCCC;
+width: 316px;
+font-size: 12px;
+border-right: 2px solid #CCCCCC;
+}
+
+#twitter_status a:link
+
+{
+color: #8FC8E8;
+}
+
+#twitter_status a:visited
+
+{
+color: #024769;
+}
+
+
+#twitter_status a:hover
+
+{
+color: #222222; 
+
+}
+
+#twitter_status
+
+{
+-webkit-border-radius:5px 5px 5px 5px 5px;
 }
 
 #text_twit
 
 {
 width: 250px;
-font-size: 11px;
+font-size:10px;
 position:relative;
 left: 61px;
-top: -26px;
+top: -56px;
+}
+
+#twitter_small
+
+{
+position: relative;
+top: -34px;
 }
 
 .twitter_image
 
 {
 border: 2px solid #B2DFEE;
-position: relative;
-top: 30px;
 }
-#twitter_status
+
+.time 
 
 {
-border-bottom: 3px solid #CCCCCC; 
-height: 27px;
-top: -60px;
+color: #B2DFEE;
 position: relative;
+top: 5px;
 }
-
 
 #body_container
 
