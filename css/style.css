@@ -76,9 +76,8 @@ font-family: Helvetica,sans-serif;
 #mini_intro 
 
 {
-font-size: 12px;
+font-size: 13px;
 color: #024769;
-font-family: delicious-light;
 text-align: center;
 }
 
@@ -216,33 +215,35 @@ color: #222222;
 {
 -webkit-border-radius:5px 5px 5px 5px 5px;
 border-bottom: 4px solid #CCCCCC;
-height: 110px;
+height: 116px;
 width: 252px;
 }
 
 #text_twit
 
 {
-width: 200px;
+width: 190px;
 font-weight: normal;
 font-size:10px;
 font-family: Lucida Grande, sans-serif;
 position:relative;
 left: 61px;
-top: -55px;
+top: -45px;
 }
 
 #twitter_small
 
 {
 position: relative;
-top: -44px;
+top: -42px;
 }
 
 .twitter_image
 
 {
 border: 2px solid #B2DFEE;
+position: relative;
+top: 10px;
 }
 
 .time 
