@@ -73,18 +73,21 @@
 				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
 				<h3 id="recent_tweets"> <?php
-										$this->load->library('misc');
 										
-										$number = 0;
-											 
 										foreach($results->results as $result){
 										echo '<div class="twitter_status">';
 										echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
 										$text_n = $result->text; 
-										echo $text_n;
+										echo "<div id='text_twit'>".$text_n."</div>";
 										echo '<div class="twitter_small">';
-										echo '<strong>From:</strong> <a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
-										echo '<strong>at:</strong> '.$result->created_at;
+										echo '<a href="http://www.twitter.com/'.$result->from_user.'">'.$result->from_user.'</a>: ';
+										$date = $result->created_at;
+										
+										list($D, $d, $M, $y, $h, $m, $s, $z) = sscanf($date, "%3s, %2d %3s %4d %2d:%2d:%2d %5s");
+										
+										$date = time() - strtotime("$d $M $y $h:$m:$s $z"); 
+										echo $date;
+										echo "<div class='time'>";
 										echo '</div>';
 										echo '</div>';
 										

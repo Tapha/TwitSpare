@@ -186,40 +186,56 @@ left: -10px;
 #recent_tweets
 
 {
-width: 312px;
-font-size: 12px; 
-border-right: 5px solid #CCCCCC;
+width: 311px;
+font-size: 12px;
+border-right: 1px solid #CCCCCC;
 }
 
 .twitter_status a:visited
 
 {
-color: #222222;
+color: #B2DFEE;
 }
 
 .twitter_status a:hover
 
 {
-color: #B2DFEE;
+color: #222222;
+
 }
 
 .twitter_small
 
 {
-top: 14px;
+top: 2px;
 position: relative;
+border-bottom: 1px solid #CCCCCC;
+}
+
+#text_twit
+
+{
+width: 250px;
+font-size: 11px;
+position:relative;
+left: 61px;
+top: -26px;
 }
 
 .twitter_image
 
 {
 border: 2px solid #B2DFEE;
+position: relative;
+top: 30px;
 }
 #twitter_status
 
 {
 border-bottom: 3px solid #CCCCCC; 
-height: 130px;
+height: 27px;
+top: -60px;
+position: relative;
 }
 
 
