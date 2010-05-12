@@ -158,7 +158,7 @@ text-decoration: none;
 
 {
 color: #222222;
-border-bottom: 5px solid #111111;
+border-bottom: 5px solid #CCCCCC;
 text-decoration: none;
 }
 
@@ -187,9 +187,8 @@ left: -10px;
 {
 top: 20px;
 position: relative;
-width: 316px;
+width: 256px;
 font-size: 12px;
-border-right: 2px solid #CCCCCC;
 }
 
 #twitter_status a:link
@@ -201,7 +200,7 @@ color: #8FC8E8;
 #twitter_status a:visited
 
 {
-color: #024769;
+color: #8FC8E8;
 }
 
 
@@ -216,23 +215,28 @@ color: #222222;
 
 {
 -webkit-border-radius:5px 5px 5px 5px 5px;
+border-bottom: 4px solid #CCCCCC;
+height: 110px;
+width: 252px;
 }
 
 #text_twit
 
 {
-width: 250px;
+width: 200px;
+font-weight: normal;
 font-size:10px;
+font-family: Lucida Grande, sans-serif;
 position:relative;
 left: 61px;
-top: -56px;
+top: -55px;
 }
 
 #twitter_small
 
 {
 position: relative;
-top: -34px;
+top: -44px;
 }
 
 .twitter_image
@@ -244,7 +248,7 @@ border: 2px solid #B2DFEE;
 .time 
 
 {
-color: #B2DFEE;
+color: ##0B070C;
 position: relative;
 top: 5px;
 }
