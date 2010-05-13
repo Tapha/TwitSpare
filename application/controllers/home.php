@@ -34,14 +34,6 @@ class Home extends Controller {
 		
 		$data['results'] = $results;
 		
-		//Load URL Helper
-		
-		$this->load->helper('url');
-					
-		$data['base_misc_library'] = base_url()."application/libraries/Misc.php";
-		
-		//print_r($results->results);
-		
 		$this->load->view("home",$data);
 		
 		
