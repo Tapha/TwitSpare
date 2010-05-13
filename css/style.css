@@ -91,7 +91,7 @@ color: #333333
 
 {
 font-size: 18px;
-color: #FFFFFF;
+color: #222222; 
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
 background: #8FC8E8;
@@ -105,6 +105,7 @@ text-align: center;
 
 body
 {
+
 font-family: Helvetica,Arial,sans-serif;
 min-height: 700px;
 background: #FFFFFF ;
