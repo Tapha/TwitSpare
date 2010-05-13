@@ -148,7 +148,7 @@ float: left;
 left: 5%;
 text-align: center;
 top: -125px;
-border-bottom: 5px solid #B2DFEE;
+border-bottom: 5px solid #CCCCCC;
 color: #333333;
 text-decoration: none;
 }
@@ -157,7 +157,7 @@ text-decoration: none;
 
 {
 color: #222222;
-border-bottom: 5px solid #CCCCCC;
+border-bottom: 5px solid #B2DFEE;
 text-decoration: none;
 }
 
@@ -226,7 +226,8 @@ width: 190px;
 font-weight: normal;
 font-size:10px;
 font-family: Lucida Grande, sans-serif;
-position:relative;height: 62px;
+position:relative;
+height: 62px;
 left: 61px;
 top: -45px;
 }
