@@ -111,6 +111,18 @@ min-height: 700px;
 background: #FFFFFF ;
 }
 
+#earn a
+
+{
+background-color: #FF9; 
+}
+
+#earn a:hover
+
+{
+background-color:#EEEEEE;
+}
+
 #body_content
 
 {
@@ -230,7 +242,7 @@ font-family: Lucida Grande, sans-serif;
 position:relative;
 height: 62px;
 left: 61px;
-top: -45px;
+top: -46px;
 }
 
 #twitter_small
@@ -251,9 +263,16 @@ top: 10px;
 .time 
 
 {
-color: ##0B070C;
+color: #222222;
 position: relative;
 top: 5px;
+background-color: #8FC8E8;
+}
+
+#link_user
+
+{
+background-color: #FF9;
 }
 
 #body_container
