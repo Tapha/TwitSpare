@@ -91,8 +91,8 @@
 	<b>Click here to create an account or sign-in</b></a></div>
 	<div style="float: right; width: 155px; padding: 9px;"><a id="twitter" href="/twitspare/index.php/oauth/"><img src="/twitspare/images/Sign-in-with-Twitter.png"></a></div>
 	<div style="clear: both;"></div>
-	 
 </div>
+<!--<div id="twitspare_premium"><a id="premium_logo" href="/twitspare/index.php/premium/"><img src="/twitspare/images/premium_logo.png"</a></div>--> 
 <div id= "nav"><a href="/">About   </a> <a href="/">   How It Works</a> <a href="/">    Founder</a> <a href="/">   FAQ</a> <a href="/">    Contact Us</a></div>
 </div>
 <div id="earnings"></div>	
@@ -111,7 +111,7 @@
 
 	<div id="main_body">
 
-				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
+				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> <a id="how_it_works_main" href="/how_it_works">How It Works</a><span id="how_it_works_mini">It's really, really easy</span>
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
 				<h3 id="recent_tweets"> <?php
 										
@@ -138,12 +138,15 @@
 										echo "</div>";
 										}
 										
-										echo '</div>';
+										
 										
 										
 										?>	
-	</h3>	
-	</div>	
+	</h3>	 
+	
+	</div>
+	</div>
+  			
 	</div>
 	<div id="footer">
 	</div>
