@@ -111,7 +111,7 @@
 
 	<div id="main_body">
 
-				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> <a id="how_it_works_main" href="/how_it_works">How It Works</a><span id="how_it_works_mini">It's really, really easy</span>
+				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> <div id="box_how"><a id="how_it_works_main" href="/how_it_works">How It Works</a><span id="how_it_works_mini">It's really, really easy</span> </div>
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
 				<h3 id="recent_tweets"> <?php
 										

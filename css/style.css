@@ -282,6 +282,17 @@ left: 60px;
 font-weight: bold;
 }
 
+#how_text
+
+{
+font-size:15px;
+
+position: relative;
+
+font-weight: normal;
+font-family:Georgia;
+}
+
 #text_twit
 
 {
