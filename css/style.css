@@ -164,8 +164,9 @@ top: -52px;
 {
 color: #222222;
 float: left;
-background: ;
+background: #FFFFFF;
 -moz-border-radius:7px 7px 7px 7px;
+-webkit-border-radius:7px 7px 7px 7px;
 left: 6.6%;
 width: 1093px;
 position: absolute;
