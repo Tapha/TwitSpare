@@ -167,6 +167,7 @@ background: #FFFFFF;
 -moz-border-radius:7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
 left: 6.6%;
+height: 700px;
 width: 1093px;
 position: absolute;
 top: 250px;
@@ -178,7 +179,7 @@ top: 250px;
 left: 390px;
 position:relative;
 height: 100px;
-width: 250px;
+width: 310px;
 top: -350px;
 font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
 }
@@ -187,33 +188,35 @@ font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers
 
 {
 text-decoration:none;
+font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
+font-size: 12px;
 }
 
 #find_bold
 
 {
-position:absolute;
-top: -143px;
-left: -85px;
+position:relative;
+top: -70px;
+left: -13px;
 background-color: #FF9; 
+font-size: 13px;
 }
 
 #find_text
 
 {
-position:relative;
-top: 10px;
-left: 6px;
+position:absolute;
+left: 70px;
+top: 20px;
 font-size: 13px;
-text-align: center;
-height: 20px;
 }
 
 #find_image
 
 {
 position:relative;
-left: 40px;
+left: -10px;
+top: 10px;
 }
 
 #body_recent a
@@ -225,7 +228,7 @@ position:relative;
 float: left;
 left: 36px;
 text-align:center;
-border-bottom: 5px solid #B2DFEE;
+border-bottom: 5px solid #CCCCCC;
 color: #333333;
 text-decoration: none;
 }
@@ -234,7 +237,7 @@ text-decoration: none;
 
 {
 color: #222222;
-border-bottom: 5px solid #CCCCCC;
+border-bottom: 5px solid #B2DFEE;
 text-decoration: none;
 }
 
