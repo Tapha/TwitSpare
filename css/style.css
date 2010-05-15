@@ -156,7 +156,6 @@ width:1091px;
 position: relative;
 left: 6.1%;
 top: -52px;
-
 }
 
 #main_body
@@ -178,12 +177,12 @@ top: 250px;
 {
 font-family: Helvetica,sans-serif;
 font-size: 26px;
-postion:relative;
+postion:absolute;
 float: left;
-left: 5%;
+left: 42px;
 text-align: center;
 top: -125px;
-border-bottom: 5px solid #CCCCCC;
+border-bottom: 5px solid #B2DFEE;
 color: #333333;
 text-decoration: none;
 }
@@ -192,7 +191,7 @@ text-decoration: none;
 
 {
 color: #222222;
-border-bottom: 5px solid #B2DFEE;
+border-bottom: 5px solid #CCCCCC;
 text-decoration: none;
 }
 
@@ -204,6 +203,8 @@ color: #222222;
 font-family: Helvetica,sans-serif;
 width: 201px;
 text-align: center;
+position: relative;
+left: 10px;
 }
 
 #earnings
@@ -223,6 +224,7 @@ top: 20px;
 position: relative;
 width: 256px;
 font-size: 12px;
+left: 4px;
 }
 
 #twitter_status a:link
