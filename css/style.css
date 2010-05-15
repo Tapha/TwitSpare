@@ -172,16 +172,59 @@ position: absolute;
 top: 250px;
 }
 
+#how
+
+{
+left: 390px;
+position:relative;
+height: 100px;
+width: 250px;
+top: -350px;
+font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
+}
+
+#find a
+
+{
+text-decoration:none;
+}
+
+#find_bold
+
+{
+position:absolute;
+top: -143px;
+left: -85px;
+background-color: #FF9; 
+}
+
+#find_text
+
+{
+position:relative;
+top: 10px;
+left: 6px;
+font-size: 13px;
+text-align: center;
+height: 20px;
+}
+
+#find_image
+
+{
+position:relative;
+left: 40px;
+}
+
 #body_recent a
 
 {
 font-family: Helvetica,sans-serif;
 font-size: 26px;
-postion:absolute;
+position:relative;
 float: left;
-left: 42px;
-text-align: center;
-top: -125px;
+left: 36px;
+text-align:center;
 border-bottom: 5px solid #B2DFEE;
 color: #333333;
 text-decoration: none;
@@ -204,7 +247,7 @@ font-family: Helvetica,sans-serif;
 width: 201px;
 text-align: center;
 position: relative;
-left: 10px;
+left: 38px;
 }
 
 #earnings
@@ -224,7 +267,7 @@ top: 20px;
 position: relative;
 width: 256px;
 font-size: 12px;
-left: 4px;
+left: 33px;
 }
 
 #twitter_status a:link

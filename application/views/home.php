@@ -111,7 +111,9 @@
 
 	<div id="main_body">
 
-				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> <div id="box_how"><a id="how_it_works_main" href="/how_it_works">How It Works</a><span id="how_it_works_mini">It's really, really easy</span> </div>
+				<h1 id="body_recent"><a id = "recents" href="/twitspare/recent/">Recent Messages</a></h1> 
+				<div id="box_how"><a id="how_it_works_main" href="/how_it_works">How It Works</a><span id="how_it_works_mini">It's really, really easy</span> 
+				
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
 				<h3 id="recent_tweets"> <?php
 										
@@ -144,6 +146,12 @@
 										?>	
 	</h3>	 
 	
+	
+	</div>
+	<div id="how">
+	<div id="find"><img id="find_image" src="http://localhost/twitspare/images/news-128.png"><a id="find_text" href="/"><strong id="find_bold">Find interesting things</strong>View interesting information, links, videos, articles, etc from businesses wanting to get their message out.</div>
+	<!--<div id="comment_vote"><img id="vote_image" src="http://localhost/twitspare/images/data-64.png"><a id="find_text" href="/"><strong id="find_bold">Find interesting things</strong>View interesting information, links, videos, articles, etc from businesses wanting to get their message out.</div>
+-->
 	</div>
 	</div>
   			
