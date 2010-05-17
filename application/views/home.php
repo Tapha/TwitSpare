@@ -150,8 +150,7 @@
 	</div>
 	<div id="how">
 	<div id="find"><img id="find_image" src="http://localhost/twitspare/images/news-64.png"><strong id="find_bold">Find interesting things</strong><a id="find_text" href="/">View interesting information, links, videos, blog posts, etc from businesses wanting to get their message out.</div>
-	<!--<div id="comment_vote"><img id="vote_image" src="http://localhost/twitspare/images/data-64.png"><strong id="vote_bold">Find interesting things</strong><a id="vote_text" href="/">View interesting information, links, videos, articles, etc from businesses wanting to get their message out.</div>
--->
+	<div id="comment_vote"><img id="vote_image" src="http://localhost/twitspare/images/plane-64.png"><strong id="vote_bold">Vote, Comment, Discuss</strong><a id="vote_text" href="/">Vote on the best ones, comment on them, (like on reddit or hacker news).</div>
 	</div>
 	</div>
   			
