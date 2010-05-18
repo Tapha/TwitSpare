@@ -147,7 +147,7 @@ class Oauth extends Controller {
 
 					//Load user_account view
 					
-					$this->load->view('user_account', $data);
+					$this->load->view('user_account_new', $data);
 					
 				}
 		

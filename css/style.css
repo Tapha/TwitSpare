@@ -1,3 +1,8 @@
+/*Custom*/
+
+@font-face {font-family: DJ Gross; src: url(http://localhost/twitspare/system/fonts/DJGROSS.ttf); font-weight: normal;}
+@font-face {font-family: jinky; src: url(http://localhost/twitspare/system/fonts/jinky.ttf);}
+
 img
 	
 {
@@ -13,7 +18,24 @@ width: 1160px;
 
 }
 
+#slogan 
 
+{
+position: relative;
+top:-551px;
+left:269px;
+text-decoration: none;
+font-family:DJ Gross;
+font-size: 40px;
+width: 270px;
+}
+
+#text_sloga
+
+{
+font-size: 30px;
+font-family: JINKy;
+}
 
 #header
 
@@ -180,7 +202,7 @@ left: 390px;
 position:relative;
 height: 100px;
 width: 310px;
-top: -350px;
+top: -401px;
 font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
 }
 
