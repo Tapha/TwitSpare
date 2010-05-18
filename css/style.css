@@ -1,7 +1,48 @@
-/*Custom*/
+/*Custom*Font*Declerations*/
+ 
+        /*Delicious-Bold*Italic*/
+		
+		@font-face { font-family: delicious-bolditalic; src: url(http://localhost/twitspare/system/fonts/dc30.otf) format("opentype") }
+		
+		/*Chunkfive*/
+		
+		/*(OpenType)*/
+		
+		@font-face { font-family: Chunkfive; src: url(http://localhost/twitspare/system/fonts/Chunkfive.otf) format("opentype") }
+		
+		/*Delicious-Italic*/
+		
+		@font-face { font-family: delicious-italic; src: url(http://localhost/twitspare/system/fonts/dc32.otf) format("opentype") }
+		
+		/*Chunkfive*/
 
-@font-face {font-family: DJ Gross; src: url(http://localhost/twitspare/system/fonts/DJGROSS.ttf); font-weight: normal;}
-@font-face {font-family: jinky; src: url(http://localhost/twitspare/system/fonts/jinky.ttf);}
+		/*(TrueType)*/
+		
+		@font-face { font-family: Chunkfive; src: url(http://localhost/twitspare/system/fonts/Chunkfive.ttf) format("truetype") }
+		
+		/*Delicious-Heavy*/
+		
+		@font-face { font-family: delicious-heavy; src: url(http://localhost/twitspare/system/fonts/dc31.otf) format("opentype") }
+		
+		/*Delicious-Bold*/
+		
+		@font-face { font-family: delicious-bold; src: url(http://localhost/twitspare/system/fonts/dc35.otf) format("opentype") }
+		
+		/*Delicious-Roman*/
+		
+		@font-face { font-family: delicious-roman; src: url(http://localhost/twitspare/system/fonts/dc33.otf) format("opentype") }
+		
+		/*Delicious-Smallcaps*/
+		
+		@font-face { font-family: delicious-smallcaps; src: url(http://localhost/twitspare/system/fonts/dc29.otf) format("opentype") }
+		
+		/*DJ GROSS*/
+
+		@font-face {font-family: DJ Gross; src: url(http://localhost/twitspare/system/fonts/DJGROSS.ttf); font-weight: normal;}
+
+		/*Jinky*/
+		
+		@font-face {font-family: jinky; src: url(http://localhost/twitspare/system/fonts/jinky.ttf);}
 
 img
 	
@@ -134,9 +175,12 @@ color: #333333
 
 {
 font-size: 18px;
-color: #222222; 
+color: #FBFBBFB; 
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
 background: #8FC8E8;
 height: 24px;
 width: 850px;
@@ -173,6 +217,9 @@ color: #0B070C;
 float: left;
 -moz-border-radius:7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
 background:#B2DFEE;
 width:1091px;
 position: relative;
@@ -188,6 +235,9 @@ float: left;
 background: #FFFFFF;
 -moz-border-radius:7px 7px 7px 7px;
 -webkit-border-radius:7px 7px 7px 7px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
 left: 6.6%;
 height: 500px;
 width: 1093px;
@@ -377,6 +427,81 @@ color: #8FC8E8;
 color: #8FC8E8;
 }
 
+#email_address
+{
+position: relative;
+font-weight: bold;
+font-size: 42px;
+font-family: delicious;
+left: -140px;
+top: 50px;
+}
+
+#email_add
+
+{
+font-size: 20px;
+position: relative;
+left: 661px;
+background: #ff9;
+width: 180px;
+top: 40px;
+}
+.form
+
+{
+position: relative;
+top: 180px;
+left: 500px;
+}
+
+input, textarea {  
+	position: relative;
+	left: -120px;
+	top: -81px;
+    padding: 17px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 34px/100% delicious;  
+    width: 475px;  
+    background: #FFFFFF;  
+    }  
+  
+textarea {  
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 200%;  
+    }  
+  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {  
+    border-color: #C9C9C9;  
+    }  
+  
+.form label {  
+	position: relative;
+	font-family: chunk-five;
+	font-size: 30px;
+	left: -801px;
+	top: -81px;
+    margin-left: 10px;  
+    color: #999999;  
+    }  
+  
+.submit input {  
+    width: auto;  
+    padding: 19px 45px;  
+    background: #B2DFEE;  
+    border: 0;  
+    font-size: 35px;  
+    color: #FFFFFF;  
+    }  
+input, textarea {  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
 
 #twitter_status a:hover
 

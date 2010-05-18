@@ -107,11 +107,27 @@ class Oauth extends Controller {
 		
 		$row = $query->row();
 		
+		if (isset($row->twitter_user_id))
+		
+		{
+		
 		$db_user_id = $row->twitter_user_id;
 		
 		//Check against verified user id
 		
 		$user_id = $data['users_id'];
+		
+		}
+		
+		else
+		
+		{
+		
+		$user_id = 0;
+		
+		$db_user_id = 1;
+		
+		}
 		
 		if ( $user_id == $db_user_id )
 
