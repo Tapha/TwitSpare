@@ -116,7 +116,7 @@
 				
 				<h2 id="body_recent_under">Ad messages recently tweeted</h2>
 				<h3 id="recent_tweets"> <?php
-										
+										$i = 0;
 										foreach($results->results as $result){
 										echo '<div id="twitter_status">';
 										echo '<img src="'.$result->profile_image_url.'" class="twitter_image">';
@@ -138,6 +138,10 @@
 										
 										echo "</div>";
 										echo "</div>";
+										$i++;
+										if ($i == 4)
+										break;
+										
 										}
 										
 										
@@ -163,6 +167,6 @@
 	<a href=""></a>
 
 	</div>
-	
+	<div id="click_sign_on">Click on the sign with twitter link above to get started!</div>
 </body>	
 </html>

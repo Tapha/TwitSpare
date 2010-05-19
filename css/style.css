@@ -63,7 +63,7 @@ width: 1160px;
 
 {
 position: relative;
-top:-551px;
+top:-802px;
 left:269px;
 text-decoration: none;
 font-family:DJ Gross;
@@ -239,7 +239,7 @@ background: #FFFFFF;
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
 left: 6.6%;
-height: 500px;
+height: 600px;
 width: 1093px;
 position: absolute;
 top: 250px;
@@ -252,7 +252,7 @@ left: 390px;
 position:relative;
 height: 100px;
 width: 310px;
-top: -401px;
+top: -624px;
 font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
 }
 
@@ -269,7 +269,7 @@ font-size: 12px;
 {
 position:relative;
 left: 16px;
-top: 45px;
+top: 49px;
 background-color: #FF9; 
 font-size: 13px;
 }
@@ -318,12 +318,26 @@ top: 240px;
 font-size: 13px;
 }
 
+
 #vote_image
 
 {
 position:relative;
 left: -90px;
 top: 98px;
+}
+
+#click_sign_on
+
+{
+position: relative;
+font-size:15px;
+background: #B2DFEE;
+font-family: delicious-bold;
+top: 550px;
+left: 440px;
+width: 352px;
+text-decoration: none;
 }
 
 #tweet_vote a
@@ -433,7 +447,7 @@ position: relative;
 font-weight: bold;
 font-size: 42px;
 font-family: delicious;
-left: -140px;
+left: 300px;
 top: 50px;
 }
 
@@ -442,10 +456,10 @@ top: 50px;
 {
 font-size: 20px;
 position: relative;
-left: 661px;
+left: 250px;
 background: #ff9;
 width: 180px;
-top: 40px;
+top: 32px;
 }
 .form
 
@@ -457,7 +471,7 @@ left: 500px;
 
 input, textarea {  
 	position: relative;
-	left: -120px;
+	left: -100px;
 	top: -81px;
     padding: 17px;  
     border: solid 1px #E5E5E5;  
@@ -483,7 +497,7 @@ input:focus, textarea:focus {
 	position: relative;
 	font-family: chunk-five;
 	font-size: 30px;
-	left: -801px;
+	left: -742px;
 	top: -81px;
     margin-left: 10px;  
     color: #999999;  
@@ -502,6 +516,17 @@ input, textarea {
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     }  
+	
+#great
+
+{
+position: relative;
+font-family: delicious;
+width: 378px;
+left:450px;
+font-size: 20px;
+background: #B2DFEe;
+}	
 
 #twitter_status a:hover
 

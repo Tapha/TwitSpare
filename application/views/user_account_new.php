@@ -45,6 +45,7 @@
 	<a href="/"><img src="/twitspare/images/logo.png"></a>
 	</div>
 	</div>
+	<div id="great">Almost There! We just need a few more things.</div>
 	<div id ="email_address">Step 1: What's Your Email Address Matey?<div id="email_add">We need it to pay you!</div></div>
 	<form class="form">  
   
