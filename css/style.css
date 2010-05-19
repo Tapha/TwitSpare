@@ -59,11 +59,18 @@ width: 1160px;
 
 }
 
+#header_container_new
+
+{
+height:1000px;
+width:1000px;
+}
+
 #slogan 
 
 {
 position: relative;
-top:-802px;
+top:-801px;
 left:269px;
 text-decoration: none;
 font-family:DJ Gross;
@@ -472,9 +479,9 @@ left: 500px;
 #or
 
 {
-position: relative;
-top: 565px;
-left: 506px;
+position: absolute;
+top: 726px;
+left: 550px;
 font-size: 32px;
 font-family: jinky;
 }
@@ -485,7 +492,7 @@ font-family: jinky;
 color: #8FC8E8;
 font-weight: bold;
 top: 780px;
-left: 502px;
+left: 537px;
 font-family: Helvetica, sans-serif;
 font-size: 32px;
 text-decoration: none;
@@ -545,12 +552,30 @@ input, textarea {
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     }  
+.go_submit input
+	{
+	position: relative;
+	left: 50px;
+	top: 50px;	
+	}
+	
+#tags_intro
 
+{
+position: relative;
+top: -100px;
+left: -300px;
+font-family: delicious;
+font-size: 44px;
+font-weight: bold;
+width: 400px;
+}	
+	
 #tags_interested_in
 
 {
 position:relative;
-top: 360px;
+top: 540px;
 left:400px;
 }
 
@@ -558,7 +583,7 @@ left:400px;
 
 {
 position:relative;
-top: -57px;
+top: 10px;
 left: 21px;
 }
 	

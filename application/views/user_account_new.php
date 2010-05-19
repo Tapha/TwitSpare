@@ -38,7 +38,7 @@
 	
 </head>		
 <body id="container">
-<div id="header_container">
+<div id="header_container_new">
 <div id="header">
 
 	<div id="logo">
@@ -55,14 +55,14 @@
         <label for="email">E-mail</label>  
 
     <p class="submit">  
-        <input type="submit" value="Send" />  
+        <input type="submit" value="Next" />  
     </p>  
 	
   
 	</form>  
 
 	<form id="tags_interested_in">
-	<span id="tags_intro"></span>
+	<span id="tags_intro">Step 2: Top 10 Categories (Pick 3 that interest you the most)</span>
 	<table>
 	<?php
 	
@@ -70,18 +70,19 @@
 	
 	{
 		
-		echo "<span id='tags_name'>".$tag.":"."<p class='tag'>";
-		echo "<input type='checkbox' name='option[]' value='$tag'><br></br>";
-		echo "</p></span>";
+		echo $tag;
+
 		
 	}
 	
 	?>
+	<p class="go_submit">
 	<input type="submit" value="Go"/>
+	</p>
 	</table>
 	</form
 	
-
+</div>
 
 </body>	
 	
