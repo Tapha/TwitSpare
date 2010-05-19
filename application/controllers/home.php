@@ -16,7 +16,7 @@ class Home extends Controller {
 		
 		//Query for last 20 submitted links
 		
-		$query = $this->db->query("SELECT * FROM sent_ads ORDER BY sent_ads_id DESC LIMIT 0, 5");
+		$query = $this->db->query("SELECT * FROM sent_ads ORDER BY ads_id DESC LIMIT 0, 5");
 		
 		foreach($query->result() as $link)
 		

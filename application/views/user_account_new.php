@@ -47,6 +47,7 @@
 	</div>
 	<div id="great">Almost There! We just need a few more things.</div>
 	<div id ="email_address">Step 1: What's Your Email Address Matey?<div id="email_add">We need it to pay you!</div></div>
+	
 	<form class="form">  
   
     <p class="email">  
@@ -56,8 +57,32 @@
     <p class="submit">  
         <input type="submit" value="Send" />  
     </p>  
+	
   
-</form>  
+	</form>  
+
+	<form id="tags_interested_in">
+	<span id="tags_intro"></span>
+	<table>
+	<?php
+	
+	foreach ($tags as $tag)
+	
+	{
+		
+		echo "<span id='tags_name'>".$tag.":"."<p class='tag'>";
+		echo "<input type='checkbox' name='option[]' value='$tag'><br></br>";
+		echo "</p></span>";
+		
+	}
+	
+	?>
+	<input type="submit" value="Go"/>
+	</table>
+	</form
+	
+
+
 </body>	
 	
 	

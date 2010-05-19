@@ -251,7 +251,7 @@ top: 250px;
 left: 390px;
 position:relative;
 height: 100px;
-width: 310px;
+width: 290px;
 top: -624px;
 font-family: 'Helvetica Neue', HelveticaNeue, 'Lucida Grande', Frutiger, Univers, 'Helvetica Neue', Calibri, Helvetica, Verdana, sans-serif;
 }
@@ -268,7 +268,7 @@ font-size: 12px;
 
 {
 position:relative;
-left: 16px;
+left: 25px;
 top: 49px;
 background-color: #FF9; 
 font-size: 13px;
@@ -303,7 +303,7 @@ font-size: 12px;
 
 {
 position:relative;
-left: -75px;
+left: -66px;
 top: 25px;
 background-color: #FF9; 
 font-size: 13px;
@@ -334,8 +334,8 @@ position: relative;
 font-size:15px;
 background: #B2DFEE;
 font-family: delicious-bold;
-top: 550px;
-left: 440px;
+top: 540px;
+left: 450px;
 width: 352px;
 text-decoration: none;
 }
@@ -352,7 +352,7 @@ font-size: 12px;
 
 {
 position:relative;
-left: -75px;
+left: -66px;
 top: 15px;
 background-color: #FF9; 
 font-size: 13px;
@@ -469,6 +469,35 @@ top: 180px;
 left: 500px;
 }
 
+#or
+
+{
+position: relative;
+top: 565px;
+left: 506px;
+font-size: 32px;
+font-family: jinky;
+}
+
+#sign_up_here a
+
+{position:absolute;
+color: #8FC8E8;
+font-weight: bold;
+top: 780px;
+left: 502px;
+font-family: Helvetica, sans-serif;
+font-size: 32px;
+text-decoration: none;
+border-bottom: 4px solid #CBCCCC;
+}
+
+#sign_up_here a:hover
+
+{
+color: #EEE;
+}
+
 input, textarea {  
 	position: relative;
 	left: -100px;
@@ -516,17 +545,34 @@ input, textarea {
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
     }  
+
+#tags_interested_in
+
+{
+position:relative;
+top: 360px;
+left:400px;
+}
+
+#tags_name
+
+{
+position:relative;
+top: -57px;
+left: 21px;
+}
 	
 #great
 
 {
 position: relative;
 font-family: delicious;
-width: 378px;
+width: 375px;
 left:450px;
 font-size: 20px;
 background: #B2DFEe;
 }	
+
 
 #twitter_status a:hover
 

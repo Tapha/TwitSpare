@@ -160,6 +160,24 @@ class Oauth extends Controller {
 					//Insert the twitter user id into the database
 					
 					$query = $this->db->query("INSERT INTO user VALUES ('','$user_id','$username','','')");
+					
+							//Get the subject that have over 100 uses
+		
+					$query_2 = $this->db->query("SELECT * FROM twitspare_tags WHERE used_number >= 100 LIMIT 10");
+					
+					//Get
+					
+					foreach($query_2->result() as $tag)
+					
+					{
+						
+						$tags_interesting[] = $tag->ads_tag_name;
+						
+					}
+					
+					$data['tags'] = $tags_interesting;
+		
+		
 
 					//Load user_account view
 					
